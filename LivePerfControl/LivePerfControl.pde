@@ -131,12 +131,6 @@ void oscEvent(OscMessage theOscMessage) {
     delay(2);
     myBus.sendNoteOff(0, 60, 100); // Send a Midi nodeOff
     
-    /*
-    OscMessage myMessage = new OscMessage("/numbers");
-    myMessage.add(120);
-    oscP5.send(myMessage, myRemoteLocation); 
-    
-    */
     poweredon = true;
   }
   
@@ -147,12 +141,7 @@ void oscEvent(OscMessage theOscMessage) {
     myBus.sendNoteOn(0, 61, 100); // Send a Midi noteOn
     delay(2);
     myBus.sendNoteOff(0, 61, 100); // Send a Midi nodeOff
-    /*
-    OscMessage myMessage = new OscMessage("/numbers");
-    myMessage.add(121);
-    oscP5.send(myMessage, myRemoteLocation); 
     
-    */
     poweredon = false;
   }
   
